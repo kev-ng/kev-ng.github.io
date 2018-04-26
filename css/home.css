@@ -676,4 +676,7 @@ p>a, p>a:hover,p>a:visited, a.link, a.link:hover, a.link:visited{
     text-decoration: none;
 }
 
+body{
+    visibility: hidden;
+}
 
