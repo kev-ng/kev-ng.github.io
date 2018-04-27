@@ -477,13 +477,16 @@ section{
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom:0;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   #mainNav.navbar-shrink .title{
       border-bottom:3px solid black;
+      -webkit-transition: all 0.4s ease-in;
+      -moz-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
   }
 #mainNav.navbar-shrink .navbar-brand h1{
     font-size: 1.25rem;
