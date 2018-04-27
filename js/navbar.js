@@ -7,12 +7,17 @@
       $("nav").removeClass("navbar-shrink");
     }
   };
+
+  var navbarClose = function(){
+    $('.navbar-collapse').collapse('hide');
+  }
   
   // Collapse now if page is not at top
   navbarCollapse();
 
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+  $(window).scroll(navbarClose);
 
   // Smooth scrolling using jQuery easing
 $('a.nav-link[href*="#"]:not([href="#"])').click(function () {
@@ -29,6 +34,4 @@ $('a.nav-link[href*="#"]:not([href="#"])').click(function () {
 });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.nav-link').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
+  $('.nav-link').click(navbarClose);
