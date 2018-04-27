@@ -478,10 +478,10 @@ section{
   }
 
   #mainNav.navbar-shrink .title{
-      border-bottom:3px solid black;
-      -webkit-transition: all 0.4s ease-in;
-      -moz-transition: all 0.4s ease-in;
-      transition: all 0.4s ease-in;
+      border-bottom:0px solid black;
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
   }
 #mainNav.navbar-shrink .navbar-brand h1{
     font-size: 1.25rem;
@@ -676,5 +676,14 @@ p>a, p>a:hover,p>a:visited, a.link, a.link:hover, a.link:visited{
 
 body{
     visibility: hidden;
+}
+
+.introduction{
+    margin-top:150px;
+}
+
+section.works{
+    margin-top:0;
+    padding-top:0;
 }
 
