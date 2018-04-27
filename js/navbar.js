@@ -1,14 +1,10 @@
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $('nav').addClass('navbar-shrink');
+
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 50) {
+      $("#mainNav").addClass("navbar-shrink");
     } else {
-      $('nav').removeClass('navbar-shrink');
+      $("#mainNav").removeClass("navbar-shrink");
     }
-  });
-
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    console.log('clicked');
-    $("#wrapper").toggleClass("toggled");
-});
-
+  };
+  navbarCollapse();
+  $(window).scroll(navbarCollapse);
