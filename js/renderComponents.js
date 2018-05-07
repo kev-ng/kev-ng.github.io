@@ -16,6 +16,7 @@ window.onload=function () {
     document.getElementById('spinner').style.display="none"
     $('html, body').css({
         'overflow': 'auto',
+        'overflow-x': 'hidden',
         'height': 'auto'
       })
 }
