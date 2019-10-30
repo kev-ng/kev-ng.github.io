@@ -9,6 +9,9 @@ body{
     font-size:16px;
     font-weight: 400;
 }
+a, a:hover, a:active, a:visited {
+    color: var(--primary-color);
+}
 
 @media (max-width: 767px){
     body{
@@ -27,8 +30,6 @@ h1, strong{
 }
 
 h2 {
-
-
     font-size: 1.8rem;
     font-weight: 800;
 }
@@ -36,6 +37,10 @@ h2 {
 .title{
     border-bottom: var(--line-thickness) black solid;
     padding-bottom:0;
+}
+
+.caption{
+    line-height: 32px;
 }
 
 
@@ -319,7 +324,7 @@ section{
 }
 
 .timeline-body > p,
-.timeline-body > ul,
+.timeline-body > ul
  {
     margin-bottom: 0;
 }
@@ -444,29 +449,30 @@ section{
 }
 
 .workCard-container{
-    margin-bottom:10px;
-    margin-top:10px;
+    margin-bottom:20px;
+    margin-top:20px;
 
 }
 .workCard{
     background:white;
     /* border:1px solid rgba(0,0,0,0.1); */
-    /* border-radius: 10px; */
+    border-radius: 4px;
     box-shadow: 0px 10px 30px 2px rgba(0,0,0,0.1);
     overflow:hidden;
     height:100%;
     top:0;
     cursor: pointer;
-    -webkit-transition: all 0.15s ease-in;
-    -moz-transition: all 0.15s ease-in;
-    transition: all 0.15s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     position: relative;
+    
 }
 
 .workCard:hover{
     
     box-shadow: 0px 30px 50px 2px rgba(0,0,0,0.2);
-    top:-15px;
+    top:-4px;
     position: relative;
 }
 
@@ -499,9 +505,9 @@ section{
     padding-top:30px;
 
     font-size: 1.5rem;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
   }
 
 
@@ -611,13 +617,15 @@ p>a, p>a:hover,p>a:visited, a.link, a.link:hover, a.link:visited{
 }
 
 .introduction{
-    padding-bottom:30px;
+    padding-bottom:20px;
+    padding-top:80px;
+
 }
 
 @media(min-width:991px){
     .introduction{
-padding-top:140px;
-    }
+padding-top:200px;
+padding-bottom:200px;
 }
 section.works{
     margin-top:0;
@@ -634,7 +642,7 @@ nav .nav-link:focus{
 
 .action-link:hover{
     text-decoration: none;
-}
+}}
 
 
 
